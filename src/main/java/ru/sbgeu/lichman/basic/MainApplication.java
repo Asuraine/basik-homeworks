@@ -12,7 +12,7 @@ public class MainApplication {
             grettings();
         }
         if (numberUser == 2) {
-            checkSign();
+            checkSign(2, 5, 5);
         }
         if (numberUser == 3) {
             selectColor();
@@ -21,7 +21,7 @@ public class MainApplication {
             compareNumbers();
         }
         if (numberUser == 5) {
-            addOrSubtractAndPrint();
+            addOrSubtractAndPrint(88, 53, true);
         }
 
     }
@@ -34,14 +34,7 @@ public class MainApplication {
         System.out.println("Java");
     }
 
-    public static void checkSign() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите переменную а");
-        int a = scanner.nextInt();
-        System.out.println("Введите переменную b");
-        int b = scanner.nextInt();
-        System.out.println("Введите переменную c");
-        int c = scanner.nextInt();
+    public static void checkSign(int a, int b, int c) {
         int sum = a + b + c;
         if (sum >= 0) {
             System.out.println("Сумма положительная");
@@ -73,10 +66,8 @@ public class MainApplication {
             System.out.println("a < b");
     }
 
-    public static void addOrSubtractAndPrint() {
-        int initValue = 8;
-        int delta = 5;
-        boolean increment;
+    public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
+
         if (increment = initValue > delta) {
             System.out.println("Сумма:" + (initValue + delta));
         } else
